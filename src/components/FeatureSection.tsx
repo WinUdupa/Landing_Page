@@ -5,7 +5,7 @@ const cards = [
   {
     title: "We stay with you.",
     text: "From first investment to long term decisions, we guide every phase not just entry points.",
-    color: "#a61fff",
+    color: "#9d9d9d",
   },
   {
     title: "Product Over Projections",

@@ -3,9 +3,10 @@
   height: 100vh;
   background: linear-gradient(
     180deg,
-    #b13bffb2 0%,
-    #e7e4f8 15%,
-    #d096f7b2 85%
+  #b13bffb2 0%,
+  #d096f7 12%,
+  #f0ecf8 25%,
+  #f5f3f9 100%
   );
 }
 
