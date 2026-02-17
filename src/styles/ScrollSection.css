@@ -20,7 +20,7 @@
   left: 215px;
   font-weight: 400;
 
-  font-size: clamp(22px, 6vw, 44px); /* Half of paragraph */
+  font-size: clamp(22px, 6vw, 44px); 
   font-weight: 600;
   line-height: 1.2;
 

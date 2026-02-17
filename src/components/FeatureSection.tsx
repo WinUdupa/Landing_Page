@@ -45,7 +45,7 @@ export default function FeatureSection() {
   };
 
   return (
-    <section className="feature-section">
+    <section id="research" className="feature-section">
       <div className="feature-container">
         {/* Heading */}
         <h2 className="feature-heading">
@@ -61,13 +61,15 @@ export default function FeatureSection() {
         {/* Carousel Container */}
         <div className="carousel-wrapper">
           <button
-            className="carousel-button carousel-button-prev"
+            className="carousel-button"
             onClick={handlePrev}
             disabled={currentIndex === 0}
-            aria-label="Previous cards"
           >
-            ←
+            <svg viewBox="0 0 24 24">
+              <path d="M15 18L9 12L15 6" />
+            </svg>
           </button>
+
 
           {/* Cards */}
           <div className="card-grid">
@@ -86,14 +88,16 @@ export default function FeatureSection() {
             ))}
           </div>
 
-          <button
-            className="carousel-button carousel-button-next"
-            onClick={handleNext}
-            disabled={currentIndex === cards.length - 3}
-            aria-label="Next cards"
-          >
-            →
-          </button>
+            <button
+              className="carousel-button"
+              onClick={handleNext}
+              disabled={currentIndex === cards.length - 3}
+            >
+              <svg viewBox="0 0 24 24">
+                <path d="M9 18L15 12L9 6" />
+              </svg>
+            </button>
+
         </div>
       </div>
     </section>

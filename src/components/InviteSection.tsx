@@ -20,11 +20,11 @@ export default function InviteSection() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Add your form submission logic here
+    // Form submission logic to be added 
   };
 
   return (
-    <section className="invite-section">
+    <section id="invite" className="invite-section">
       <div className="invite-container">
         {/* Left Side - Image */}
         <div className="invite-left">

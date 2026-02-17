@@ -3,7 +3,7 @@ import logoImage from "../assets/Logo.png"
 
 export default function HeroSection() {
   return (
-    <section className="hero-section">
+    <section id="philosophy" className="hero-section">
       <header className="hero-header">
         <div className="hero-logo-container">
           <img 

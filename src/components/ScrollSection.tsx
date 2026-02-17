@@ -56,7 +56,7 @@ paragraph.innerHTML = words
   }, []);
 
   return (
-<section ref={sectionRef} className="scroll-section">
+<section id="approach" ref={sectionRef} className="scroll-section">
   <div className="scroll-section__container">
 
     {/* Header */}
