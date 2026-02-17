@@ -14,9 +14,18 @@ export default function ScrollSection() {
 
     const words = paragraph.innerText.split(" ");
 
-    paragraph.innerHTML = words
-      .map((word) => `<span class="word">${word} </span>`)
-      .join("");
+paragraph.innerHTML = words
+  .map((word) => {
+    const cleanWord = word.replace(/[^\w]/g, "").toLowerCase();
+
+    if (cleanWord === "honesty" || cleanWord === "patience") {
+      return `<span class="word highlight-word">${word} </span>`;
+    }
+
+    return `<span class="word">${word} </span>`;
+  })
+  .join("");
+
 
     const wordElements = paragraph.querySelectorAll(".word");
 
