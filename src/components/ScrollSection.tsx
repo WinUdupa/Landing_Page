@@ -5,49 +5,67 @@ import "../styles/ScrollSection.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const text =
-  "Our work is built around patience. We offer a carefully chosen basket of stocks and identify rare short-term opportunities when they appear, while we stay with you through every phase of your investing life. Your wealth and assets are reviewed each year with clarity and honesty. All for a simple fee and no commissions — your money stays with you.";
-
 export default function ScrollSection() {
   const sectionRef = useRef(null);
-  const words = text.split(" ");
+  const textRef = useRef(null);
 
   useEffect(() => {
-    const wordsEl = gsap.utils.toArray(".word");
+    const paragraph = textRef.current;
 
-    ScrollTrigger.create({
-      trigger: sectionRef.current,
-      start: "top top",
-      end: `+=${words.length * 70}`,
-      scrub: true,
-      pin: true,
+    const words = paragraph.innerText.split(" ");
 
-      onUpdate: (self) => {
-        const index = Math.floor(self.progress * wordsEl.length);
+    paragraph.innerHTML = words
+      .map((word) => `<span class="word">${word} </span>`)
+      .join("");
 
-        wordsEl.forEach((word, i) => {
-          word.classList.remove("word-active");
-          if (i === index) {
-            word.classList.add("word-active");
-          }
-        });
+    const wordElements = paragraph.querySelectorAll(".word");
+
+    gsap.set(wordElements, { opacity: 0.2 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 2,
       },
+    });
+
+    wordElements.forEach((word, index) => {
+      tl.to(
+        word,
+        {
+          opacity: 1,
+          duration: 0.3,
+          ease: "power2.out",
+        },
+        index * 0.12
+      );
     });
 
     return () => ScrollTrigger.getAll().forEach((t) => t.kill());
   }, []);
 
   return (
-    <section ref={sectionRef} className="scroll-section">
-      <div className="content">
-        <p className="scroll-text">
-          {words.map((word, i) => (
-            <span key={i} className="word">
-              {word}{" "}
-            </span>
-          ))}
-        </p>
-      </div>
-    </section>
+<section ref={sectionRef} className="scroll-section">
+  <div className="scroll-section__container">
+
+    {/* Header */}
+    <div className="scroll-section__header">
+      FOR THOSE WHO INVEST WITH <span>PATIENCE.</span>
+    </div>
+
+    <p ref={textRef} className="scroll-section__text">
+      Our work is built around patience. We offer a carefully chosen basket
+      of stocks and identify rare short-term opportunities when they appear.
+      We stay with you through every phase of your investing life. Decisions
+      are deliberate, transparent, and designed for the long term. Your
+      wealth and assets are reviewed each year with clarity and honesty. All
+      for a simple fee and no commissions — your money stays with you.
+    </p>
+
+  </div>
+</section>
+
   );
 }

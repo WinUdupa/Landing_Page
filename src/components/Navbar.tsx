@@ -20,7 +20,7 @@ export default function Navbar() {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            fill="white"
             stroke="currentColor"
             strokeWidth="2"
           >

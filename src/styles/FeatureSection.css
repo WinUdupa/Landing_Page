@@ -1,3 +1,4 @@
+/* Feature Section */
 .feature-section {
   background: #111;
   color: white;
@@ -15,16 +16,16 @@
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;   
+  min-height: 100vh;
 }
-
 
 /* Heading */
 .feature-heading {
+  padding-left: 80px;
+  padding-top: -50px;
   font-size: clamp(36px, 5vw, 64px);
   font-weight: 700;
   margin-bottom: 20px;
@@ -36,6 +37,7 @@
 
 /* Subtitle */
 .feature-sub {
+  padding-left: 80px;
   max-width: 700px;
   font-size: clamp(16px, 2vw, 20px);
   color: #ccc;
@@ -57,7 +59,6 @@
   width: 50px;
   height: 50px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  background: transparent;
   color: white;
   font-size: 24px;
   font-weight: 700;
@@ -67,12 +68,12 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  background-color: #a61fff;
 }
 
 .carousel-button:hover:not(:disabled) {
   border-color: #a61fff;
   color: #a61fff;
-  transform: scale(1.1);
 }
 
 .carousel-button:disabled {
@@ -106,16 +107,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  transition: all 0.35s ease;
   background: rgba(255, 255, 255, 0.02);
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
-/* Hover Card Effect */
+/* Hover Inner Shadow Only */
 .feature-card:hover {
-  border-color: #a61fff;
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(166, 31, 255, 0.2);
+  border-color: var(--accent);
+  box-shadow:
+    inset 0 0 25px color-mix(in srgb, var(--accent) 40%, transparent),
+    inset 0 0 60px color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
 /* Title */
@@ -141,20 +142,24 @@
   background: #333;
   margin-top: 25px;
   opacity: 0.5;
-  transition: all 0.4s ease;
   border-radius: 4px;
+  transition: opacity 0.4s ease;
 }
 
-/* Image Hover Reveal */
+/* Image Hover Slight Brightness Only */
 .feature-card:hover .card-image {
   opacity: 0.8;
-  transform: scale(1.02);
 }
 
 /* Mobile Fine Tuning */
 @media (max-width: 768px) {
   .feature-section {
     padding: 60px 4vw;
+    min-height: auto;
+  }
+
+  .feature-container {
+    padding-top: 60px;
     min-height: auto;
   }
 

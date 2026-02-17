@@ -5,27 +5,27 @@ const cards = [
   {
     title: "We stay with you.",
     text: "From first investment to long term decisions, we guide every phase not just entry points.",
-    color: "#9d9d9d",
+    color: "#B13BFF4D",
   },
   {
     title: "Product Over Projections",
     text: "We focus on product strength, adoption, and capability rather than short-term earnings or distant forecasts.",
-    color: "#1da1f2",
+    color: "#2D78FE4D",
   },
   {
     title: "A focused set to choose from.",
     text: "A basket of 50+ researched stocks that suits your goals not endless recommendations.",
-    color: "#00c2ff",
+    color: "#27D8F74F",
   },
   {
     title: "Diversification, made visible",
     text: "Stocks spread across industries and risk buckets to help balance desicions.",
-    color: "#ff6b6b",
+    color: "#2BFF4B4F",
   },
   {
     title: "Portfolio review",
     text: "Annual reviews of equity, debt, gold, and more-at no extra cost.",
-    color: "#ffa500",
+    color: "#FFCB3A4F",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function FeatureSection() {
               <div
                 key={currentIndex + i}
                 className="feature-card"
-                style={{ "--accent": card.color }}
+                style={{ "--accent": card.color } as React.CSSProperties}
               >
                 <h4 className="card-title">{card.title}</h4>
                 <p className="card-text">{card.text}</p>
@@ -92,7 +92,7 @@ export default function FeatureSection() {
             disabled={currentIndex === cards.length - 3}
             aria-label="Next cards"
           >
-            
+            →
           </button>
         </div>
       </div>
