@@ -5,27 +5,27 @@ const cards = [
   {
     title: "We stay with you.",
     text: "From first investment to long term decisions, we guide every phase not just entry points.",
-    color: "#B13BFF4D",
+    color: "#B13BFF",
   },
   {
     title: "Product Over Projections",
     text: "We focus on product strength, adoption, and capability rather than short-term earnings or distant forecasts.",
-    color: "#2D78FE4D",
+    color: "#2D78FE",
   },
   {
     title: "A focused set to choose from.",
     text: "A basket of 50+ researched stocks that suits your goals not endless recommendations.",
-    color: "#27D8F74F",
+    color: "#27D8F7",
   },
   {
     title: "Diversification, made visible",
     text: "Stocks spread across industries and risk buckets to help balance desicions.",
-    color: "#2BFF4B4F",
+    color: "#2BFF4B",
   },
   {
     title: "Portfolio review",
     text: "Annual reviews of equity, debt, gold, and more-at no extra cost.",
-    color: "#FFCB3A4F",
+    color: "#FFCB3A",
   },
 ];
 

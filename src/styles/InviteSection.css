@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: 0.4fr 0.6fr;
   gap: 0;
-  border-radius: 20px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
