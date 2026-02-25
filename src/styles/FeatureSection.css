@@ -25,7 +25,7 @@
 .feature-heading {
   padding-left: 80px;
   padding-top: -50px;
-  font-size: clamp(36px, 5vw, 64px);
+  font-size: clamp(36px, 5vw, 54px);
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -38,7 +38,7 @@
 .feature-sub {
   padding-left: 80px;
   max-width: 700px;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(16px, 2vw, 15px);
   color: #ccc;
   margin-bottom: 60px;
   line-height: 1.6;
@@ -92,7 +92,7 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
   flex: 1;
   min-width: 0;
   overflow-x: hidden;
@@ -101,9 +101,8 @@
 /* Card */
 .feature-card {
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 30px;
-  min-height: 500px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -123,7 +122,7 @@
 
 /* Title */
 .card-title {
-  font-size: clamp(14px, 1.5vw, 16px);
+  font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 600;
   color: var(--accent);
   margin-bottom: 8px;
@@ -133,8 +132,8 @@
 
 /* Text */
 .card-text {
-  font-size: clamp(20px, 2.5vw, 28px);
-  font-weight: 500;
+  font-size: clamp(20px, 2.5vw, 20px);
+  font-weight: 300;
   line-height: 1.4;
   margin-bottom: auto;
   flex: 1;
