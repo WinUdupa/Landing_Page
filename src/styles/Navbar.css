@@ -15,7 +15,7 @@
   gap: 30px;
   background: linear-gradient(
     90deg,
-    #b13bffb2 100%
+    #e0b4fe 100%
   );
   padding: 9px 24px 9px 12px;
   border-radius: 40px;
@@ -41,6 +41,7 @@
 .navbar-logo svg {
   width: 18px;
   height: 18px;
+  
 }
 
 .navbar-logo:hover {
@@ -57,11 +58,13 @@
   gap: 25px;
 }
 
+
+
 /* Navbar Link */
 .navbar-link {
   font-size: 14px;
-  font-weight: 500;
-  color: #ffffff90;
+  font-weight: 600;
+  color: #111;
   text-decoration: none;
   padding: 6px 14px;
   border-radius: 20px;
@@ -74,13 +77,38 @@
 
 
 .navbar-link.active {
-  color: #fff;
-  font-weight: 700;
+  color: #111;
+  font-weight: 900;
   background: rgba(255, 255, 255, 0.22);
   box-shadow:
     0 0 12px rgba(255, 255, 255, 0.25),
     inset 0 0 8px rgba(255, 255, 255, 0.2);
   transform: scale(1.06);
+}
+
+/* Navbar Actions (Sign In + Request Invite group) */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Sign In link */
+.navbar-signin {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbar-signin:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* Navbar Button */

@@ -84,4 +84,95 @@
   color: #a61fff;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .scroll-section__header {
+    left: 25px;
+    top: 40px;
+  }
 
+  .scroll-section {
+    height: 280vh;
+  }
+
+  .scroll-section__text {
+    padding-top: 1300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-section__header {
+    left: 20px;
+    top: 30px;
+  }
+
+  .scroll-section {
+    height: 250vh;
+  }
+
+  .scroll-section__text {
+    padding-top: 1500px;
+  }
+}
+
+@media (max-width: 599px) {
+  .scroll-section__header {
+    padding-top: 40px;
+    left: 30px;
+    top: 20px;
+  }
+
+  .scroll-section {
+    height: 200vh;
+  }
+
+  .scroll-section__text {
+    padding-top: 850px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 600px) {
+  .scroll-section__header {
+    left: 45px;
+    top: 25px;
+  }
+
+  .scroll-section {
+    height: 200vh;
+  }
+
+  .scroll-section__text {
+    padding-top: 1000px;
+  }
+}
+
+@media (max-height: 480px) and (orientation: landscape) {
+  .scroll-section__header {
+    left: 25px;
+    top: 15px;
+  }
+
+  .scroll-section {
+    height: 300vh;
+  }
+
+  .scroll-section__text {
+    padding-top: 800px;
+  }
+}
+
+@media (max-width: 379px) {
+  .scroll-section__header {
+    padding-top: 10px;
+    left: 25px;
+    top: 15px;
+  }
+
+  .scroll-section {
+    height: 280vh;
+  }
+
+  .scroll-section__text {
+    padding-top: 1200px;
+  }
+}
