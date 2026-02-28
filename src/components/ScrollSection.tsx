@@ -64,15 +64,16 @@ paragraph.innerHTML = words
       FOR THOSE WHO INVEST WITH <span>PATIENCE.</span>
     </div>
 
-    <p ref={textRef} className="scroll-section__text">
-      Our work is built around patience. We offer a carefully chosen basket
-      of stocks and identify rare short-term opportunities when they appear.
-      We stay with you through every phase of your investing life. Decisions
-      are deliberate, transparent, and designed for the long term. Your
-      wealth and assets are reviewed each year with clarity and honesty. All
-      for a simple fee and no commissions — your money stays with you.
-    </p>
-
+  <p ref={textRef} className="scroll-section__text">
+    Our work is built around patience. We offer a carefully chosen basket
+    of stocks and identify rare short-term opportunities when they appear.
+    <br />
+    We stay with you through every phase of your investing life. Decisions
+    are deliberate, transparent, and designed for the long term.
+    <br />
+    Your wealth and assets are reviewed each year with clarity and honesty. All
+    for a simple fee and no commissions — your money stays with you.
+  </p>
   </div>
 </section>
 

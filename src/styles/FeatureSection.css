@@ -1,6 +1,6 @@
 /* Feature Section */
 .feature-section {
-  background: #111;
+  background: #1E1E1E;
   color: white;
   padding: 80px 5vw;
   width: 100%;
@@ -25,7 +25,7 @@
 .feature-heading {
   padding-left: 80px;
   padding-top: -50px;
-  font-size: clamp(36px, 5vw, 54px);
+  font-size: clamp(36px, 5vw,60px);
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -38,7 +38,7 @@
 .feature-sub {
   padding-left: 80px;
   max-width: 700px;
-  font-size: clamp(16px, 2vw, 15px);
+  font-size: clamp(16px, 2vw, 30px);
   color: #ccc;
   margin-bottom: 60px;
   line-height: 1.6;
@@ -95,7 +95,6 @@
   gap: 20px;
   flex: 1;
   min-width: 0;
-  overflow-x: hidden;
 }
 
 /* Card */
@@ -106,10 +105,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: #1e1e1e;
+  background: #1E1E1E;
   transition: box-shadow 0.35s ease, border-color 0.35s ease;
   overflow: hidden;
   min-width: 100%;
+  border: 1px solid #EEEEEE54;
 }
 
 /* Hover Inner Shadow Only */
@@ -122,7 +122,8 @@
 
 /* Title */
 .card-title {
-  font-size: clamp(14px, 1.5vw, 18px);
+  font-size: clamp(14px, 1.5vw, 14px);
+  padding-bottom: 13px;
   font-weight: 600;
   color: var(--accent);
   margin-bottom: 8px;
@@ -133,7 +134,7 @@
 /* Text */
 .card-text {
   font-size: clamp(20px, 2.5vw, 20px);
-  font-weight: 300;
+  font-weight: 800;
   line-height: 1.4;
   margin-bottom: auto;
   flex: 1;

@@ -23,7 +23,7 @@ export default function HeroSection() {
               Built for Long Term{" "}
               <span className="hero-highlight">Investors.</span>
             </h1>
-            <h2 className="hero-subheading">Reserved for a Select Few.</h2>
+            <h2 className="hero-subheading">Reserved for a Select <br></br>Few.</h2>
             <p className="hero-description">
               An invite-only platform offering honest, research driven investment
               guidance.

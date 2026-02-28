@@ -5,8 +5,8 @@ import "../styles/FeatureSection.css";
 import image1 from "../assets/card1.png";
 import image2 from "../assets/card2.png";
 import image3 from "../assets/card3.png";
-import image4 from "../assets/card1.png";
-import image5 from "../assets/card1.png";
+import image4 from "../assets/card4.png";
+import image5 from "../assets/card5.png";
 
 const cards = [
   {

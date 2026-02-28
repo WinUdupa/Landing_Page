@@ -3,6 +3,7 @@ import FeatureSection from "./components/FeatureSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import InviteSection from "./components/InviteSection";
+import Footer from "./components/Footer";
 import "./index.css";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <ScrollSection />
       <FeatureSection />
       <InviteSection />
+      <Footer />
       <Navbar />
 
     </>

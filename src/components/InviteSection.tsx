@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/InviteSection.css";
-import InviteImage from "../assets/Invitation-Card.jpg";
+import InviteImage from "../assets/Invitation-Card.png";
 
 export default function InviteSection() {
   const [formData, setFormData] = useState({

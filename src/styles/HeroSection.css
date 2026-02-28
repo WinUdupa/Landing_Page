@@ -4,7 +4,7 @@
   background: linear-gradient(
     180deg,
     #f5f3f9 0%,
-    #f0ecf8 65%,
+    #f0ecf8 75%,
     #e0b4fe 100%
   );
   display: flex;
@@ -81,7 +81,6 @@
 /* Hero Highlight */
 .hero-highlight {
   color: #a61fff;
-  text-shadow: 0 0 18px rgba(166, 31, 255, 0.4);
 }
 
 /* Hero Subheading */
@@ -96,7 +95,7 @@
 
 /* Hero Description */
 .hero-description {
-  font-size: clamp(16px, 1.8vw, 20px);
+  font-size: clamp(16px, 1.8vw, 30px);
   line-height: 1.6;
   font-weight: 400;
   color: #6b7280;
